@@ -7,9 +7,7 @@ pipeline {
             docker images
             docker info
             docker version
-            docker compose version 
-            curl --version
-            jq --version
+            docker compose up 
             '''
         }
       }
