@@ -8,7 +8,7 @@ pipeline {
             docker info
             docker version
             
-            docker-compose up -d //Run on the Detach mode
+            docker-compose up -d 
             '''
         }
       }
