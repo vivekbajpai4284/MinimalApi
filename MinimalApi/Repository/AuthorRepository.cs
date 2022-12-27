@@ -34,6 +34,11 @@ namespace MinimalApi.Repository
                     //    new Book { Title = "Let us C++"},
                     //    new Book { Title = "Let us C#"}
                     //}
+                },
+                new Author
+                {
+                    FirstName ="Vivek",
+                    LastName ="Bajpai",
                 }
                 };
                 context.Authors.AddRange(authors);
