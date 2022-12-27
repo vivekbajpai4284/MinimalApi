@@ -15,6 +15,7 @@ RUN dotnet build "MinimalApi.csproj" -c Release -o /app/build
 
 FROM build AS publish
 RUN dotnet publish "MinimalApi.csproj" -c Release -o /app/publish /p:UseAppHost=false
+Run dotnet dev-certs https -t
 
 FROM base AS final
 WORKDIR /app
