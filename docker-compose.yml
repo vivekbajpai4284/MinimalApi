@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  minimalapi:
+    image: ${DOCKER_REGISTRY-}minimalapi
+    build:
+      context: .
+      dockerfile: MinimalApi/Dockerfile
+    ports:
+      - "5457:80"
+      - "5458:443"
