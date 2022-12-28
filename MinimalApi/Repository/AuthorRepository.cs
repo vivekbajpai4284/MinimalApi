@@ -39,6 +39,11 @@ namespace MinimalApi.Repository
                 {
                     FirstName ="Vivek",
                     LastName ="Bajpai",
+                },
+                  new Author
+                {
+                    FirstName ="Anuj",
+                    LastName ="Som",
                 }
                 };
                 context.Authors.AddRange(authors);
